@@ -1,0 +1,23 @@
+---
+title: "Readme"
+date: "Sunday, March 22, 2015"
+output: html_document
+---
+
+This is a Readme file for the shiny app that I created for the course project in the Coursera course "Developing Data Products" as part of the Data Science Specialization. 
+
+### Background information:
+
+This application uses the "USPersonalExpenditure" dataset, which is found in the R {datasets} package. The description of this dataset from its documention is shown below.
+
+>This data set consists of United States personal expenditures (in billions of dollars) in the categories; food and tobacco, household operation, medical and health, personal care, and private education for the years 1940, 1945, 1950, 1955 and 1960.
+
+This shiny app cleans the dataset so that it can be plotted with the {ggplot2} package. 
+
+### How to use the shiny app:
+
+The user can select the desired input (i.e. Expense Category) from the drop-down in the sidebar on the left. The input options include "Food and Tobacco", "Household Operation", "Medical & Health", "Personal Care", and "Private Education". 
+
+After selecting the desired input, the line graph in the main panel on the right renders to display the expense category that was selected by the user for the period between 1940 and 1960 (with a 5 year frequency). In addition, 1 median absolute deviation is shown above and below the level of personal expenditures for the selected expense category. 
+
+
